@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de Educación Inicial Alejandra Castro">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Alejandra Castro | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logourl.jpg">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="logopagina.png" width="100" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Comentarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="perfil.jpg" alt="Foto de Alejandra Castro">
+        <h1>Hola, soy Alejandra Castro</h1>
+        <!--<h2>Estudiante de Puericultura del CBT No.2 Lerma.</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="miss.jpg" width="100" alt="cuidado de los niños, masajes para la motricidad,areas de desarrollo.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Alejandra</h2>
+        <p class="seccion-texto"> Ale es estudiante de Puericultura, actualmente cursa el Quinto semestre, su trayectoria ha sido muy larga con experiencias increibles ha realizado practicas en Estancias Infantiles como el "Instituto Rockefeller" y el Materno infantil "Rosa Maria Sanchez Mendoza" pertenciente a ISSEMyM</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">AREAS DE DESARROLLO</p>
+            <p>para un óptimo desarrollo en los niños </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Cognitiva</span>
+              <span class="badge text-bg-primary">Psicomotriz</span>
+              <span class="badge text-bg-primary">lenguaje</span>
+              <span class="badge text-bg-primary">Sociemocional</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">material didáctico</p>
+            <p>Esto siempre con la finalidad de que lo visualicen y manipulen</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Gran tamaño</span>
+              <span class="badge text-bg-primary">Colores llamativos</span>
+              <span class="badge text-bg-primary">Material resistente</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">planeación</p>
+            <p>Para planear con una buena organización tu actividad frente al grupo utiliza</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Canciones infantiles</span>
+              <span class="badge text-bg-primary">Cuentos</span>
+              <span class="badge text-bg-primary">Materiales visuales</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="movil.jpg" alt="Movil para maternal"> 
+              <div class="overlay">
+                <p>"MOVIL PARA MATERNAL" Adecuado para usarlo a la hora de dormir, ayudando a la relajación del niño </p>
+                <div class="iconos-contenedor">
+                  <a href="https://manualidades.cosasdepeques.com/movil-colgante-para-bebe.html" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="masaje.jpg" alt="Masaje infantil">
+              <div class="overlay">
+                <p>"MASAJE INFANTIL" Ayuda al desarrollo del bebé dentro del área Psicomotriz</p>
+                <div class="iconos-contenedor">
+                  <a href="https://hospitalveugenia.com/atencion-temprana/tecnicas-de-relajacion-para-ninos-de-0-a-3-anos-masaje-shantala/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="alimntacion.jpg" alt="Alimentación saludable">
+              <div class="overlay">
+                <p>"Alimentación saludable" Es necesario brindarles los alimnetos adecuados de acuerdo a su edad</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.bebesymas.com/alimentacion-para-bebes-y-ninos/menu-semanal-saludable-para-ninos-6-12-meses" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="tapete.jpg" alt="Tapete sensorial">
+              <div class="overlay">
+                <p>"TAPETE SENSORIAL" Refuerza su desarrollo motriz y la exploración de las texturas que pueden encontrar a su alrededor</p>
+                <div class="iconos-contenedor">
+                  <a href="https://fixokids.com/estimulacion-sensorial-para-bebes-alfombra/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="material.jpg" alt="Material didáctico">
+              <div class="overlay">
+                <p>"MATERIAL DIDÁDTICO" Este mientras más grande sea y contenga colores llamativos nos ayuda para que lo manipule y obtenga un mejor aprendizaje </p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.youtube.com/watch?v=r8-rb2AekXc" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="planeacion.jpg" alt="planeacion">
+              <div class="overlay">
+                <p>"PLANEACIÓN" Es importante ejecutar la actividad de acuerdo a tu planeación y que ésta sea estimulante para el niño</p>
+                <div class="iconos-contenedor">
+                  <a href="https://bbgrenadine.com/blog/actividades-guarderia-1-a-2-anos/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Artículos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://www.ayudafamiliar.es/blog/6-consejos-como-cuidar-ninos-casa/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              ¿Cómo cuidar a un niño?
+            </li>
+          </a>
+          <a href="https://www.vivus.es/blog/guia-basica-para-padres-primerizos" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Guía para padres primerizos
+            </li>
+          </a>
+          <a href="https://www.tucanaldesalud.es/es/tusaludaldia/articulos/aprende-estimular-lenguaje-bebe" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              mis primeras palabras
+            </li>
+          </a>
+          <a href="https://www.bebesymas.com/desarrollo/cuando-como-ensenarles-colores-a-ninos-nueve-divertidas-ideas" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              enseñale los colores
+            </li>
+          </a>
+          <a href="https://www.healthychildren.org/Spanish/ages-stages/baby/Paginas/Movement-8-to-12-Months.aspx?gclid=EAIaIQobChMI-aW_gpze-wIV5AKtBh23hgS_EAAYAiAAEgJNafD_BwE" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              mis prmeros pasos
+            </li>
+          </a>
+        </ul>
+      </div>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Comentarios</h2>
+      <h3 class="seccion-descripcion">...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="Pamela Mimilia.jpg" alt="Foto de Pamela Mimilia">
+              <p class="testimonio-texto">muchas gracias por esta información realmente me ayudó</p>
+              <div class="testimonio-info">
+                <p class="cliente">Pamela Mimilia</p>
+                <p class="cargo">Lic. en Pedagogía</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="pilar sordo.png" alt="Foto de Pilar Sordo">
+              <p class="testimonio-texto">Me diverti mucho explorando esta página, espero que esta información les ayude como a mi me ayudó</p>
+              <div class="testimonio-info">
+                <p class="cliente">Pilar Sordo</p>
+                <p class="cargo">Psicóloga y Escritora</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="ariana Chavez.jpg" alt="Foto de Ariana">
+              <p class="testimonio-texto">hace tanto que estudie esto que ya no lo recocrdaba, excelente información</p>
+              <div class="testimonio-info">
+                <p class="cliente">Ariana Chávez</p>
+                <p class="cargo">Lic. en Pedagogía</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para cualquier duda que tengas acerca del cuidado de los niños en la etapa inicial.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:janedoe@micorreo.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="logoPortafolio.jpg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Podemos lograr un desarrollo sano<br>Cuidemos juntos el dsarrollo de los niños</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://www.facebook.com/profile.php?id=100025945399904" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/alejandra-castro-81a348259/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="castrosaan@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Alejandra Castro (2022) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Securit
